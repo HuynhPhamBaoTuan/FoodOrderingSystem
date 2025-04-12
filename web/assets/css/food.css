@@ -1,0 +1,98 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 2, 2024, 2:22:05 PM
+    Author     : phuct
+*/
+
+.restaurant-search input[type="text"] {
+    width: 65%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header {
+    justify-content: flex-end;
+}
+
+.restaurant-search {
+
+    width: 50%;
+}
+.food-search-form{
+    width: 100%
+}
+.filter-button{
+    display: flex;
+    gap: 10px;
+}
+.filter-btn{
+    width: 40%
+}
+.unfilter-btn{
+    width: 60%;
+}
+.unfilter-btn {
+    background: linear-gradient(135deg, #ff6b6b, #ff4c4c);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.unfilter-btn:hover {
+    background: linear-gradient(135deg, #ff4c4c, #ff6b6b);
+    box-shadow: 0 5px 15px rgba(255, 75, 75, 0.3);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination a, .pagination span {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #f7f7f7;
+}
+
+.pagination .active {
+    background-color: #ff6b6b;
+    color: white;
+    border-color: #ff6b6b;
+    cursor: default;
+}
+
+.pagination a {
+    color: #333;
+}
+
+.pagination a.disabled {
+    pointer-events: none;
+    color: #ccc;
+}

@@ -1,0 +1,39 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 20, 2024, 10:37:14 PM
+    Author     : phuct
+*/
+
+.card.p-3.mb-3.bg-success.text-white {
+    background-color: #5eae5333 !important;
+}
+
+.card.p-3.mb-3.bg-danger.text-white {
+    background-color: #ff6b6b26 !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #5eae53;
+    color: white;
+}
+
+.refund-section-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #F6B76C;
+    padding-bottom: 10px;
+}
+
+.refund-section-header span {
+    background-color: #F6B76C;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
