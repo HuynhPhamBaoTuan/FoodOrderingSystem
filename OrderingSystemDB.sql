@@ -2,12 +2,6 @@ USE [master]
 GO
 /****** Object:  Database [ordering_system]    Script Date: 4/12/2025 9:32:10 AM ******/
 CREATE DATABASE [ordering_system]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'ordering_system', FILENAME = N'D:\Workspace\SQL Sever\MSSQL15.MSSQLSERVER\MSSQL\DATA\ordering_system.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
- LOG ON 
-( NAME = N'ordering_system_log', FILENAME = N'D:\Workspace\SQL Sever\MSSQL15.MSSQLSERVER\MSSQL\DATA\ordering_system_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
- WITH CATALOG_COLLATION = DATABASE_DEFAULT
 GO
 ALTER DATABASE [ordering_system] SET COMPATIBILITY_LEVEL = 150
 GO
@@ -364,7 +358,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Users](
-	[UserID] [int] NOT NULL,
+	[UserID] [int] IDENTITY(1,1) NOT NULL,
 	[UserName] [varchar](100) NOT NULL,
 	[Pass] [varchar](255) NOT NULL,
 	[FullName] [nvarchar](50) NOT NULL,
