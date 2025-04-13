@@ -832,11 +832,11 @@ public class OrderDAO {
         List<Double> revenues = new ArrayList<>();
         List<String> monthYears = new ArrayList<>();
 
-        String sql = "SELECT YEAR(CreatedDate) AS Year, MONTH(CreatedDate) AS Month, COUNT(OrderID) AS OrderCount, SUM(TotalAmount) AS TotalRevenue "
-                + "FROM [ordering_system].[dbo].[Order] "
-                + "WHERE DeliveryStatus = 'COMPLETED' AND isRefund = 0 "
-                + "GROUP BY YEAR(CreatedDate), MONTH(CreatedDate) "
-                + "ORDER BY Year ASC, Month ASC";
+    String sql = "SELECT YEAR(CreatedDate) AS Year, MONTH(CreatedDate) AS Month, COUNT(OrderID) AS OrderCount, SUM(TotalAmount) AS TotalRevenue "
+           + "FROM [ordering_system].[dbo].[Order] "
+           + "WHERE DeliveryStatus = 'COMPLETED' AND isRefund = 0 AND YEAR(CreatedDate) = 2025 "
+           + "GROUP BY YEAR(CreatedDate), MONTH(CreatedDate) "
+           + "ORDER BY Year ASC, Month ASC";
 
         try (Connection conn = dbContext.getConnection(); PreparedStatement ps = conn.prepareStatement(sql)) {
             ResultSet resultSet = ps.executeQuery();

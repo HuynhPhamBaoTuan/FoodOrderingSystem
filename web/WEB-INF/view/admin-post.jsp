@@ -164,7 +164,7 @@
                                     <th scope="col">Image</th>
                                     <th scope="col">Heading</th>
                                     <th scope="col">Content</th>
-                                    <th scope="col">Created Date</th>
+<!--                                    <th scope="col">Created Date</th>-->
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -176,7 +176,7 @@
                                         <td><img src="${post.imgURL}" width="50%" height="50%"/></td>
                                         <td>${post.heading}</td>
                                         <td>${post.content}</td>
-                                        <td>${post.createdDate}</td>
+<!--                                        <td>${post.createdDate}</td>-->
                                         <td>
                                             <div class="d-flex justify-content-center align-items-center">
                                                 <c:choose>
