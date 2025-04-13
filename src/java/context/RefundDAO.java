@@ -4,10 +4,6 @@
  */
 package context;
 
-/**
- *
- * @author phuct
- */
 import java.math.BigDecimal;
 import model.Refund;
 

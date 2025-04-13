@@ -15,10 +15,6 @@ import java.io.PrintWriter;
 import model.Account;
 import model.Feedback;
 
-/**
- *
- * @author giang
- */
 public class FeedbackServlet extends HttpServlet {
 
     /**

@@ -14,10 +14,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import util.PasswordUtil;
 
-/**
- *
- * @author LENOVO
- */
 public class ResetPasswordServlet extends HttpServlet {
 
     /**

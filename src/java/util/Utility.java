@@ -8,10 +8,6 @@ import context.OrderItemDAO;
 import context.ProductDAO;
 import context.ShopDAO;
 
-/**
- *
- * @author LENOVO
- */
 public class Utility {
     public static String getShopAddressByOrderID(int orderID){
         OrderItemDAO oiDAO = new OrderItemDAO();

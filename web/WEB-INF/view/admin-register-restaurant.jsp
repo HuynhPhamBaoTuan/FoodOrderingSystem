@@ -1,8 +1,3 @@
-<%-- 
-    Document   : admin-post-item
-    Created on : Oct 15, 2024, 8:58:01 AM
-    Author     : Lenovo
---%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.Account" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

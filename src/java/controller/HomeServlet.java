@@ -23,10 +23,6 @@ import model.ProductImage;
 import model.Shop;
 import model.ShopDTO;
 
-/**
- *
- * @author LENOVO
- */
 public class HomeServlet extends HttpServlet {
 
     /**

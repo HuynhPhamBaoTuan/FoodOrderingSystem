@@ -4,10 +4,7 @@
  */
 package context;
 
-/**
- *
- * @author LENOVO
- */
+
 import java.sql.Time;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

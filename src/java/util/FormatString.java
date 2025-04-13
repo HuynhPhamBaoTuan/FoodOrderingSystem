@@ -6,10 +6,7 @@ package util;
 
 import java.text.DecimalFormat;
 
-/**
- *
- * @author LENOVO
- */
+
 public class FormatString {
     public static String formatCurrency(double amount) {
         DecimalFormat decimalFormat = new DecimalFormat("#,###");

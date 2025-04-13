@@ -20,10 +20,7 @@ import java.util.logging.Logger;
 
 import model.VNPay_Bill;
 
-/**
- *
- * @author phuct
- */
+
 @WebServlet(urlPatterns = {"/paymentStatus"})
 public class PaymentStatusServlet extends HttpServlet {
 

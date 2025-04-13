@@ -1,9 +1,3 @@
-<%-- 
-    Document   : change-password
-    Created on : Sep 22, 2024, 11:11:54 PM
-    Author     : LENOVO
---%>
-
 <%@page import="model.Account"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

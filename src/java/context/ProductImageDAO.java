@@ -11,10 +11,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-/**
- *
- * @author LENOVO
- */
 public class ProductImageDAO {
 
     private DBContext dbContext;

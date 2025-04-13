@@ -9,10 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import model.Comment;
 
-/**
- *
- * @author phuct
- */
+
 public class CommentDAO {
 
     private DBContext dbContext;

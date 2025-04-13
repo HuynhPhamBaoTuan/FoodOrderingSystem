@@ -6,10 +6,6 @@ package util;
 
 import org.json.JSONObject;
 
-/**
- *
- * @author phuct
- */
 public class Json {
     public static String getValueOfParamInJsonString(String jsonString, String param) {
         JSONObject jsonObject = new JSONObject(jsonString);

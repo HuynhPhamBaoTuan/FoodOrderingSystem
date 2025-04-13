@@ -16,10 +16,6 @@ import java.io.IOException;
 import java.util.List;
 import model.Post;
 
-/**
- *
- * @author phuct
- */
 @WebServlet(name = "CommunityBlog", urlPatterns = {"/blog"})
 public class CommunityBlogServlet extends HttpServlet {
 

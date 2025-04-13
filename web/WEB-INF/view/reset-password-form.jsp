@@ -1,13 +1,3 @@
-<%-- 
-    Document   : reset-password-form
-    Created on : Sep 22, 2024, 10:53:59 PM
-    Author     : LENOVO
---%>
-<%-- 
-    Document   : forgot-password
-    Created on : Sep 22, 2024, 9:54:31 PM
-    Author     : LENOVO
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">

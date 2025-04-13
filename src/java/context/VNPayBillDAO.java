@@ -9,10 +9,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import model.VNPay_Bill;
 
-/**
- *
- * @author phuct
- */
 public class VNPayBillDAO {
 
     private DBContext dbContext;

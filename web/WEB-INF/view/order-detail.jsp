@@ -1,9 +1,3 @@
-<%-- 
-    Document   : order-detail
-    Created on : Oct 18, 2024, 7:44:40 PM
-    Author     : LENOVO
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>

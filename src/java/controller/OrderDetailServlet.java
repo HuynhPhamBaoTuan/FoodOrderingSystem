@@ -26,10 +26,7 @@ import model.Product;
 import util.Email;
 import util.Utility;
 
-/**
- *
- * @author LENOVO
- */
+
 @WebServlet(name = "OrderDetailServlet", urlPatterns = {"/order-detail"})
 public class OrderDetailServlet extends HttpServlet {
 

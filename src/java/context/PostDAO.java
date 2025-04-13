@@ -12,10 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import model.Post;
 
-/**
- *
- * @author phuct
- */
+
 public class PostDAO {
 
     AccountDAO userDAO = new AccountDAO();

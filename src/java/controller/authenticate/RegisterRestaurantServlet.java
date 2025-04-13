@@ -32,10 +32,6 @@ import jakarta.servlet.annotation.WebServlet;
         maxRequestSize = 1024 * 1024 * 50 // 50MB
 )
 
-/**
- *
- * @author Lenovo
- */
 @WebServlet(name = "RegisterRestaurantServlet", urlPatterns = {"/register-restaurant"})
 public class RegisterRestaurantServlet extends HttpServlet {
 

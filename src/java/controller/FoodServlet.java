@@ -21,10 +21,7 @@ import model.Category;
 import model.Product;
 import model.ProductDTO;
 
-/**
- *
- * @author phuct
- */
+
 @WebServlet(name = "FoodServlet", urlPatterns = {"/food"})
 public class FoodServlet extends HttpServlet {
 

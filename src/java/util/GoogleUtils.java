@@ -4,11 +4,6 @@
  */
 package util;
 
-/**
- *
- * @author LENOVO
- */
-
 import model.GoogleAccount;
 import java.io.IOException;
 import org.apache.http.client.ClientProtocolException;

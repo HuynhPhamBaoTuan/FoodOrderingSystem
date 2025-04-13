@@ -1,9 +1,3 @@
-<%-- 
-    Document   : food
-    Created on : Oct 2, 2024, 2:21:28 PM
-    Author     : phuct
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.Account" %>
 <%@ page import="model.Product" %>

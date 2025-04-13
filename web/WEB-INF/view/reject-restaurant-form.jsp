@@ -1,9 +1,3 @@
-<%-- 
-    Document   : reject-restaurant-form
-    Created on : Oct 19, 2024, 12:28:42 PM
-    Author     : Lenovo
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

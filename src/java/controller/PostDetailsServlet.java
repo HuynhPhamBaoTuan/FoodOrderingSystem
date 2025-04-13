@@ -28,10 +28,7 @@ import java.util.Map;
 import model.Comment;
 import model.Post;
 
-/**
- *
- * @author phuct
- */
+
 @WebServlet(name = "PostDetailsServlet", urlPatterns = {"/postDetails"})
 @MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, // 2MB
         maxFileSize = 1024 * 1024 * 10, // 10MB

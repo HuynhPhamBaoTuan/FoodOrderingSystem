@@ -13,10 +13,7 @@ import java.util.List;
 import model.Category;
 import model.Product;
 
-/**
- *
- * @author phuct
- */
+
 public class CategoryDAO {
 
     private DBContext dbContext;

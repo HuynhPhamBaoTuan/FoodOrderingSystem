@@ -1,9 +1,3 @@
-<%-- 
-    Document   : restaurant
-    Created on : Oct 2, 2024, 2:16:53 PM
-    Author     : phuct
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.Account" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

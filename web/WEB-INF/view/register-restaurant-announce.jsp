@@ -1,9 +1,3 @@
-<%-- 
-    Document   : register-restaurant-announce
-    Created on : Oct 17, 2024, 1:52:32 AM
-    Author     : Lenovo
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

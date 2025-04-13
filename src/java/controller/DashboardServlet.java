@@ -1,8 +1,3 @@
-
-/**
- *
- * @author LENOVO
- */
 import com.google.gson.Gson;
 import context.AccountDAO;
 import java.io.IOException;

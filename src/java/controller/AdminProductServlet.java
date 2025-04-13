@@ -19,10 +19,6 @@ import java.util.logging.Logger;
 import model.Post;
 import model.Product;
 
-/**
- *
- * @author Lenovo
- */
 @WebServlet(name = "AdminProductServlet", urlPatterns = {"/admin-item"})
 public class AdminProductServlet extends HttpServlet {
 

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : food-detail
-    Created on : Oct 3, 2024, 1:29:13 AM
-    Author     : LENOVO
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" import="model.*,java.util.*,util.*" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

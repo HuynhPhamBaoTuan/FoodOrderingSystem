@@ -17,10 +17,7 @@ import java.util.List;
 import model.Account;
 import model.Order;
 
-/**
- *
- * @author LENOVO
- */
+
 @WebServlet(name = "OrderManageServlet", urlPatterns = {"/order-manage"})
 public class OrderManageServlet extends HttpServlet {
 

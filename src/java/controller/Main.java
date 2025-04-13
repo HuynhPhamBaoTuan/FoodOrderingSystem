@@ -8,10 +8,7 @@ import context.AccountDAO;
 import model.Account;
 import util.PasswordUtil;
 
-/**
- *
- * @author LENOVO
- */
+
 public class Main {
 
 }

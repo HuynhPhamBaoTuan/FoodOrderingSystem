@@ -1,8 +1,3 @@
-<%-- 
-    Document   : admin-withdrawal
-    Created on : Nov 14, 2024, 8:00:48 PM
-    Author     : phuct
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.Account" %>

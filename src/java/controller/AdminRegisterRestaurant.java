@@ -19,10 +19,6 @@ import model.Account;
 import model.Shop;
 import util.Email;
 
-/**
- *
- * @author Lenovo
- */
 @WebServlet(name = "AdminRegisterRestaurant", urlPatterns = {"/admin-register-restaurant"})
 public class AdminRegisterRestaurant extends HttpServlet {
 

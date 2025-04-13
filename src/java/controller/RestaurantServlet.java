@@ -20,10 +20,7 @@ import model.Category;
 import model.Product;
 import model.Shop;
 
-/**
- *
- * @author phuct
- */
+
 @WebServlet(urlPatterns = {"/restaurant"})
 public class RestaurantServlet extends HttpServlet {
 

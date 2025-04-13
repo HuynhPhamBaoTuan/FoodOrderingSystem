@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : Oct 16, 2024, 11:15:14 PM
-    Author     : Lenovo
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

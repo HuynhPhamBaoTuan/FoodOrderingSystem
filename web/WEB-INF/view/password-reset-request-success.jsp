@@ -1,8 +1,3 @@
-<%-- 
-    Document   : password-reset-request-success
-    Created on : Sep 22, 2024, 10:39:28 PM
-    Author     : LENOVO
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">

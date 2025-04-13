@@ -11,10 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import model.Favourite;
 
-/**
- *
- * @author giang
- */
+
 public class FavouriteDAO {
     private DBContext dbContext;
 

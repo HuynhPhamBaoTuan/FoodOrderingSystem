@@ -1,8 +1,3 @@
-
-/**
- *
- * @author LENOVO
- */
 import context.AccountDAO;
 import java.io.IOException;
 import java.util.List;

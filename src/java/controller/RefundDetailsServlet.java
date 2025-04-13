@@ -24,10 +24,7 @@ import model.VNPay_Bill;
 import util.Email;
 import util.Utility;
 
-/**
- *
- * @author phuct
- */
+
 @WebServlet(name = "RefundDetailsServlet", urlPatterns = {"/refundDetails"})
 public class RefundDetailsServlet extends HttpServlet {
 

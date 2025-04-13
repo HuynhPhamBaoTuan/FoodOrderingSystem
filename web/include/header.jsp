@@ -1,10 +1,3 @@
-<%-- 
-    Document   : header
-    Created on : Oct 3, 2024, 1:38:49 AM
-    Author     : LENOVO
---%>
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.Account" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

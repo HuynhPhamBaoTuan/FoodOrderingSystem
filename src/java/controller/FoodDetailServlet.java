@@ -32,10 +32,6 @@ import model.Product;
 import model.ProductImage;
 import model.Shop;
 
-/**
- *
- * @author LENOVO
- */
 @WebServlet(name = "FoodDetailServlet", urlPatterns = {"/food-detail"})
 public class FoodDetailServlet extends HttpServlet {
 

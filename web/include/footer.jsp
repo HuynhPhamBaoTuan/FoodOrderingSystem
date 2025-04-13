@@ -1,9 +1,3 @@
-<%-- 
-    Document   : footer
-    Created on : Oct 3, 2024, 1:36:29 AM
-    Author     : LENOVO
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <footer id="footer">
       <div class="footer-content">

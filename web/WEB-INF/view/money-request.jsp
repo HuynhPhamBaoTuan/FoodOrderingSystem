@@ -1,9 +1,3 @@
-<%-- 
-    Document   : money-request
-    Created on : Nov 14, 2024, 1:27:51 PM
-    Author     : phuct
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" import="model.*,java.util.*,util.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>

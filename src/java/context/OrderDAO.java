@@ -4,10 +4,6 @@
  */
 package context;
 
-/**
- *
- * @author phuct
- */
 import model.OrderDTO;
 import model.OrderItemDTO;
 import model.Account;

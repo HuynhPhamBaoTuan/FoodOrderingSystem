@@ -19,10 +19,7 @@ import java.util.List;
 import model.Account;
 import model.Post;
 
-/**
- *
- * @author LENOVO
- */
+
 @WebServlet(name = "BlogManageServlet", urlPatterns = {"/blog-manage"})
 public class BlogManageServlet extends HttpServlet {
 

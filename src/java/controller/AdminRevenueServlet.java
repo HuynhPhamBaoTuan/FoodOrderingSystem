@@ -29,10 +29,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-/**
- *
- * @author Lenovo
- */
+
 @WebServlet(name = "AdminRevenueServlet", urlPatterns = {"/adminRevenue"})
 public class AdminRevenueServlet extends HttpServlet {
 

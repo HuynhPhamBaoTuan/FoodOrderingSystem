@@ -37,10 +37,6 @@ import com.cloudinary.utils.ObjectUtils;
 import java.io.InputStream;
 import java.util.Map;
 
-/**
- *
- * @author LENOVO
- */
 @MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, // 2MB
         maxFileSize = 1024 * 1024 * 10, // 10MB
         maxRequestSize = 1024 * 1024 * 50)   // 50MB

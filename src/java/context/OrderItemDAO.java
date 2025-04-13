@@ -16,10 +16,7 @@ import java.util.List;
 import model.OrderItem;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-/**
- *
- * @author LENOVO
- */
+
 public class OrderItemDAO {
     
     private DBContext dbContext;

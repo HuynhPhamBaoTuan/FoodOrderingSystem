@@ -16,10 +16,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.Account;
 
-/**
- *
- * @author LENOVO
- */
 @WebServlet(name = "UpdateUserServlet", urlPatterns = {"/editUser"})
 public class UpdateUserServlet extends HttpServlet {
 private static final long serialVersionUID = 1L;

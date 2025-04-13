@@ -16,10 +16,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import model.Account;
 import util.PasswordUtil;
 
-/**
- *
- * @author Lenovo
- */
 public class ChangePasswordServlet extends HttpServlet {
    
     

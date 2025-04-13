@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : Sep 21, 2024, 12:14:27 AM
-    Author     : phuct
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.Account" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>

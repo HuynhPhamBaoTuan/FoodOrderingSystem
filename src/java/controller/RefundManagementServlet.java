@@ -19,10 +19,6 @@ import java.util.logging.Logger;
 import model.Account;
 import model.Refund;
 
-/**
- *
- * @author phuct
- */
 @WebServlet(name = "RefundManagementServlet", urlPatterns = {"/refundManage"})
 public class RefundManagementServlet extends HttpServlet {
 

@@ -12,10 +12,7 @@ import java.util.List;
 import model.Favourite;
 import model.Feedback;
 
-/**
- *
- * @author giang
- */
+
 public class FeedbackDAO {
     private DBContext dbContext;
 

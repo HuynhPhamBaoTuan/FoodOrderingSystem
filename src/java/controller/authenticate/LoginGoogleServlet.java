@@ -19,10 +19,6 @@ import jakarta.servlet.http.HttpSession;
 import model.Account;
 import util.PasswordUtil;
 
-/**
- *
- * @author LENOVO
- */
 public class LoginGoogleServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;

@@ -1,9 +1,3 @@
-<%-- 
-   Document   : refundManage
-   Created on : Oct 19, 2024, 4:21:16 PM
-   Author     : phuct
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8" import="model.*,java.util.*,util.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>

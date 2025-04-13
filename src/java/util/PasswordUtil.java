@@ -4,10 +4,6 @@
  */
 package util;
 
-/**
- *
- * @author LENOVO
- */
 import org.mindrot.jbcrypt.BCrypt;
 
 public class PasswordUtil {

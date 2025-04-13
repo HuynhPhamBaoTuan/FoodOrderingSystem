@@ -1,9 +1,3 @@
-<%-- 
-    Document   : errorPage
-    Created on : Oct 23, 2024, 11:25:06 AM
-    Author     : phuct
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">

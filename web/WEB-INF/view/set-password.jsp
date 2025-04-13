@@ -1,9 +1,3 @@
-<%-- 
-    Document   : require-password
-    Created on : Sep 18, 2024, 11:29:42 AM
-    Author     : LENOVO
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

@@ -21,10 +21,6 @@ import model.CartItemDTO;
 import model.Favourite;
 import model.Product;
 
-/**
- *
- * @author giang
- */
 public class FavouriteServlet extends HttpServlet {
 
     /**
