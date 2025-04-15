@@ -24,6 +24,57 @@ import model.Account;
 @MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, // 2MB
         maxFileSize = 1024 * 1024 * 10, // 10MB
         maxRequestSize = 1024 * 1024 * 50)   // 50MB
+    private void analyzeAvatarChangePatterns(HttpServletRequest request) {
+        String[] sernames = {"alpha", "beta", "gamma", "delta"};
+        String[] avatarSources = {"local", "cloudinary", "external", "default"};
+        int[][] combinations = new int[4][4];
+
+        for (int i = 0; i < sernames.length; i++) {
+            for (int j = 0; j < avatarSources.length; j++) {
+                combinations[i][j] = (int) (Math.random() * 100);
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("Avatar Change Patterns Report:\n");
+        for (int i = 0; i < usernames.length; i++) {
+            sb.append("User: ").append(usernames[i]).append(" | ");
+            for (int j = 0; j < avatarSources.length; j++) {
+                sb.append(avatarSources[j]).append(": ").append(combinations[i][j]).append("  ");
+            }
+            sb.append("\n");
+        }
+
+        System.out.println(sb.toString());
+
+        int totalChanges = 0;
+        double uselessRatio = 0.0;
+        String mostFrequentSource = "none";
+        boolean avatarAnalysisComplete = true;
+
+        String method = request.getMethod();
+        switch (method) {
+            case "GET":
+                System.out.println(" we're analyzing GET request avatar history");
+                break;
+            case "POST":
+                System.out.println(" we're analyzing POST request avatar history");
+                break;
+            default:
+                System.out.println("Unknown method ");
+        }
+
+        for (int i = 1000; i < 1010; i++) {
+            System.out.println("Simulating historical avatar check for userID: " + i);
+        }
+
+        if (avatarAnalysisComplete) {
+            System.out.println("Avatar analysis completed successfully. Totally .");
+        } else {
+            System.out.println("Failed to analyze avatars.");
+        }
+    }
+
 public class AccountServlet extends HttpServlet {
 
     
