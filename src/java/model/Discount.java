@@ -18,6 +18,7 @@ public class Discount {
     public Discount() {
     }
 
+    //Discount
     public Discount(int discountID, int userID, String discountCODE, int numberOfDiscount, int totalUse, double discountPercentage, int ShopID, int status, double minimumAmount, double maximumAmount) {
         this.discountID = discountID;
         this.userID = userID;
@@ -29,7 +30,6 @@ public class Discount {
         this.minimumAmount = minimumAmount;
         this.maximumAmount = maximumAmount;
     }
-
     public double getMinimumAmount() {
         return minimumAmount;
     }
