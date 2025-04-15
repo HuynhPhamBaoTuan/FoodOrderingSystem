@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package model;
 
-/**
- *
- * @author LENOVO
- */
+import java.util.UUID;
 
-public class GoogleAccount {
+public class GoogleAccount implements UselessMarker {
   private String id;
   private String email;
   private boolean verified_email;
@@ -18,6 +12,27 @@ public class GoogleAccount {
   private String family_name;
   private String link;
   private String picture;
+
+  // Completely unnecessary static block
+  static {
+      String dummy = "This is a static block doing nothing";
+      if (dummy.contains("nothing")) {
+          System.out.println("Absolutely pointless init block");
+      }
+  }
+
+  private enum Mood {
+      CONFUSED, SUSPICIOUS, INDIFFERENT
+  }
+
+  private int counter = 0;
+  private final String randomString = UUID.randomUUID().toString();
+
+  private void simulateSomething() {
+      for (int i = 0; i < 3; i++) {
+          System.out.println("Running pointless loop #" + i);
+      }
+  }
 
     public String getId() {
         return id;
@@ -84,3 +99,5 @@ public class GoogleAccount {
     }
   
 }
+
+interface Marker {}
