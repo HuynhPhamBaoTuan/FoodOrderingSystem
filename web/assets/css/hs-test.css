@@ -1,0 +1,1163 @@
+/* .container {
+    margin: 20px;
+} */
+/*.h1 {
+    font-family: sans-serif;
+}*/
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+p,
+td {
+    font-family: Consolas, monospace;
+}
+
+.noti p {
+    margin: 40px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #252525;
+}
+
+#ft p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+}
+
+table {
+    margin: auto;
+}
+
+.overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with transparency */
+    z-index: 9999;
+    /* Specify a stack order in case you're using a different order for other elements */
+    display: none;
+    /* Hidden by default */
+}
+
+.overlay-content {
+    position: absolute;
+    width: 80%;
+    min-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 10px 0 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
+    margin-top: 30px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.heading {
+    display: flex;
+    padding: 10px 20px;
+    /* margin: 20px; */
+    border-bottom: solid 0.5px #294F37;
+}
+
+
+.input form {
+
+    background: #fff;
+    height: 100%;
+    /*line-height: 40px;*/
+    /*    border: none;
+        padding: 0 17px 0 20px;
+        background: #fff;
+        font-size: 13px;*/
+    border: 1px solid #294F37;
+    border-radius: 2px;
+    /*    border-right: 0;
+        border-top-left-radius: 5px !important;
+        border-bottom-left-radius: 5px !important;*/
+}
+
+.search-new button {
+    background: #fff;
+    border-color: #294F37;
+    /*    height: 50px;
+        width: 50px !important;
+        padding: 0 15px;
+        border-radius: 50%;
+        margin-left: -11px;
+        margin-top: -6px;*/
+}
+
+.input input {
+
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+    border: 0px solid #49694B;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 8px rgba(0, 0.1, 0.1, 0.1);
+
+}
+
+.search {
+    position: relative;
+    white-space: nowrap;
+    width: 1%;
+    padding: 0;
+}
+
+
+
+/* CSS for styling the header icons */
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-icons a,
+.header-icons button {
+    margin-left: 15px;
+}
+
+/*.cart-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}*/
+
+.header-icons .cart-icon img {
+    width: 24px;
+    /* Adjust the size of the cart icon as needed */
+    height: auto;
+}
+
+.header-icons .btn {
+    padding: 8px 12px;
+    border: none;
+    /*background-color: #007bff;*/
+    /*color: white;*/
+    cursor: pointer;
+    /*border-radius: 4px;*/
+    font-size: 14px;
+}
+
+.header-icons .btn:hover {
+    color: #076121;
+    /* Adjust hover color as needed */
+}
+
+.navi {
+    height: 50px;
+    background-color: #49694B;
+    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.1, 0.1);
+}
+
+.navi.expanded {
+    height: unset;
+    background-color: #435d44;
+}
+
+.banner {
+
+    position: relative;
+    background-image: url('./img/banner-header.png');
+    /* Đường dẫn đến ảnh nền */
+    background-size: cover;
+    /* Điều chỉnh kích thước ảnh nền để bao phủ toàn bộ div */
+    background-position: center;
+    /* Canh giữa ảnh nền */
+    color: white;
+    /* Màu chữ trắng để nổi bật trên nền tối */
+    padding: 50px 20px;
+    /* Điều chỉnh padding nếu cần */
+    height: 18rem;
+    /* Chiều cao của jumbotron, điều chỉnh theo nhu cầu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px;
+    margin-bottom: 50px;
+}
+
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18rem;
+    background: rgba(0, 0, 0, 0.5);
+    /* Lớp phủ tối với độ mờ 50% */
+    z-index: 1;
+    /* Đảm bảo lớp phủ nằm trên nền nhưng dưới nội dung */
+}
+
+.jumbotron h1,
+.jumbotron p {
+    position: relative;
+    /* Đặt nội dung h1 và p trên lớp phủ */
+    z-index: 2;
+    margin: 0;
+}
+
+#ft {
+
+    background-color: #49694B;
+}
+
+.navbar-nav {
+    display: flex;
+    /* Sử dụng Flexbox cho ul */
+    justify-content: space-between;
+    /* Chia đều khoảng cách giữa các mục */
+    width: 100%;
+    /* Đảm bảo ul chiếm toàn bộ chiều rộng của container */
+    padding: 0;
+    /* Loại bỏ padding mặc định */
+    margin: 0;
+    /* Loại bỏ margin mặc định */
+    list-style: none;
+    /* Loại bỏ dấu chấm danh sách */
+}
+
+.nav-item {
+    flex: 1;
+    /* Đảm bảo các mục li có chiều rộng bằng nhau */
+    text-align: center;
+    /* Canh giữa nội dung bên trong các li */
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.nav-link:hover {
+    background-color: #4d5e4f;
+    /* Màu nền khi hover */
+    color: #007bff;
+    /* Màu chữ khi hover */
+}
+
+/* ---------------------(account order--------- */
+.orders-table,
+.list-table {
+    width: 70%;
+    min-width: 300px;
+    margin-bottom: 40px;
+    margin-top: -10px;
+}
+
+.orders-table th,
+.orders-table td,
+.list-table th,
+.list-table td {
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+}
+
+.list-table thead th,
+.list-table thead td {
+    padding: 10px;
+    color: #fff;
+}
+
+.orders-table thead,
+.list-table thead {
+    background-color: #49694B;
+    color: #fff;
+}
+
+.overlay input,
+.product select {
+    margin-top: 10px;
+    width: 50%;
+    max-width: 450px;
+    min-width: 200px;
+    flex: 1;
+    padding: 10px;
+    border: 0px solid #49694B;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.1);
+}
+
+.product-descript button,
+.account button,
+input[type="submit"],
+.cart button,
+input[type="submit"],
+.order button,
+input[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 10px 5px 10px;
+    /* Thêm khoảng cách bên trong nút submit */
+    background-color: #49694B;
+    /* Màu nền xanh */
+    color: #fff;
+    /* Màu chữ trắng */
+    border: 2px solid #49694B;
+    /* Border cùng màu với nền */
+    border-radius: 2px;
+    /* Loại bỏ bo góc */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.4);
+}
+
+/* 
+.product-descript button {
+    margin: auto;
+} */
+
+
+input[type="submit"]:hover {
+    background-color: #437150;
+    /* Màu nền khi hover */
+    border-color: #224c2e;
+    /* Border khi hover */
+}
+
+.login h1,
+.register h1,
+.account h1,
+.container h1 {
+    color: #797777;
+    margin: 40px 10px 10px 10px;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*-----------------------------cart--------------------------------------------------------*/
+#delete-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 10px 5px 10px;
+    /* Thêm khoảng cách bên trong nút submit */
+    background-color: #fff;
+    /* Màu nền xanh */
+    color: #49694B;
+    /* Màu chữ trắng */
+    border: 2px solid #49694B;
+    /* Border cùng màu với nền */
+    border-radius: 0;
+    /* Loại bỏ bo góc */
+    cursor: pointer;
+}
+
+.cart .cart-products {
+    min-width: 700px;
+    width: auto;
+    border-radius: 0px;
+    border: 1px solid #49694B;
+    background-color: #fff;
+    box-shadow: 0px 3px 35px 0px rgba(24, 16, 35, 0.07);
+    padding: 15px 25px 1px 25px;
+    margin-top: 20px;
+}
+
+/* ------order------- */
+.order .cart-products {
+    min-width: 700px;
+    width: auto;
+    border-radius: 0px;
+    /* border: 1px solid #49694B; */
+    background-color: #fff;
+    /* box-shadow: 0px 3px 35px 0px rgba(24, 16, 35, 0.07); */
+    /* padding: 15px 25px 1px 25px; */
+    margin-top: 20px;
+}
+
+#inf-table {
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 40px;
+}
+
+#inf-table thead {
+    background-color: #ffffff;
+    color: #424141;
+    border-bottom: 1px solid #49694B;
+}
+
+#inf-table th {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    color: #524f4f;
+}
+
+.cart-thead {
+    font-weight: bold;
+    font-size: 17px;
+    clear: both;
+    width: 100%;
+    border-bottom: 1px solid #49694B;
+    border-right: none;
+    border-left: none;
+    float: left;
+    min-width: 600px;
+}
+
+.cart-thead div {
+    float: left;
+    padding: 10px 0;
+    color: #464545;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    /* font-family: "Product Sans"; */
+}
+
+/* .cart-item div {
+    float: left;
+    padding: 10px 0;
+    color: #464545;
+    text-align: center;
+    font-size: 16px; */
+/* font-family: "Product Sans"; */
+/* } */
+
+
+.cart-tbody {
+    width: 100%;
+    float: left;
+}
+
+.cart-tbody img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+}
+
+.item-cart {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+}
+
+.product-name a,
+h2 {
+    display: block;
+    max-height: 75px;
+    overflow: hidden;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.cart-item div {
+    line-height: 20px;
+    vertical-align: top;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    float: left;
+    padding: 10px 0;
+    color: #464545;
+    text-align: center;
+    font-size: 16px;
+}
+
+#col1,
+#col3 {
+    flex-direction: column;
+}
+
+.number-input input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    -moz-appearance: textfield;
+    border-radius: 3px;
+}
+
+.number-input input::-webkit-outer-spin-button,
+.number-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number-input button {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #464545;
+    border: none;
+    /* border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc; */
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    box-shadow: none;
+    border-radius: 3px;
+    ;
+}
+
+
+.a-right {
+    /* text-align: right !important; */
+    border: none;
+    padding: 35px 0 30px 0;
+    padding-right: 0;
+}
+
+.totals_price {
+    color: #49694B;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 21px;
+    width: 15%;
+    font-weight: 400;
+    display: inline-block;
+    /* float: right; */
+}
+
+.total-table td {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: right;
+    padding: 10px;
+}
+
+.total-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+} */
+
+
+
+/* //--------------------------homeee------------------------------------- */
+.home {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    /* margin-right: 20px;
+    margin-left: 20px; */
+}
+
+.home .new-book h3,
+.home .best-seller h3,
+.home .recommend h3 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    height: 45px;
+    padding: 15px 30px 15px;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+    background-color: #49694B;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    margin-left: -5px;
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.4);
+}
+
+.home .new-book h3 a,
+.home .best-seller h3 a,
+.home .recommend h3 a,
+.list-book h3 a {
+    color: #fff;
+    font-weight: 490;
+    font-style: oblique;
+}
+
+.home .img-wrapper {
+    width: 100%;
+    height: 0;
+    padding-bottom: calc(100%* 50 / 30);
+    margin: 10px 0 15px 0;
+    padding-right: 10%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.img-wrapper img {
+    margin: 10% 0 10% 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.4);
+}
+
+
+.banner-home img {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.4);
+    margin-bottom: 60px;
+}
+
+.book-detail {
+    padding: 10%;
+}
+
+.book-name {
+    color: #464545;
+    font-size: 1rem;
+    line-height: 22px;
+    /* margin: 5px; */
+    padding: 0;
+    font-weight: 500;
+    word-break: break-word;
+    overflow: hidden;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 22px;
+}
+
+.home .price {
+    color: #d96923;
+    font-size: 1.1rem;
+    line-height: 22px;
+    margin: 5px;
+    padding: 0;
+    font-weight: 500;
+    word-break: break-word;
+    overflow: hidden;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 22px;
+}
+
+.banner-home {
+    margin: 20px -10px 20px -10px;
+}
+
+/* //-----------------------pruduct-details---------------------------------------- */
+
+
+.rt div {
+    margin-left: 150px;
+}
+
+#comment {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 40px 20px 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+    border-bottom: solid 1px #dddddd;
+}
+
+
+#ratingStatus {
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.rate-product select {
+    border: solid 0.5px #181918;
+    padding: 5px 0px 5px 10px;
+    border-radius: 0px;
+}
+
+.details-container {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+S .book-img {
+
+    margin: 0px 20px 0px 20px;
+}
+
+.book-img img {
+    width: 100%;
+}
+
+.product-details {
+    margin: 10px 20px 10px 20px;
+}
+
+#details {
+
+    background-color: #F3F3F3;
+}
+
+.title-product {
+    color: #3f3f3f;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.group-status {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.group-status p {
+    margin: 0 20px 0 0;
+    display: inline-block;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+.group-status a {
+    color: #252525;
+    text-decoration: none;
+    background: transparent;
+}
+
+.product-details .price {
+    color: #d97e23;
+    font-size: 1.4rem;
+    margin: 20px 0 20px 0;
+    padding: 0;
+    font-weight: 650;
+    word-break: break-word;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.quantity-label {
+    font-weight: 400;
+    display: inline-block;
+    float: left;
+    line-height: 45px;
+    margin-right: 30px;
+    /* color: #498374; */
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.add-cart-btn {
+    width: 100%;
+
+}
+
+.status {
+    color: dimgray;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+#cart-btn {
+    margin: 40px 0 40px 0;
+    height: 50px;
+    width: 300px;
+    border-radius: 3px;
+    background-color: #49694B;
+    border: 1px;
+    color: #F3F3F3;
+    font-weight: 600;
+}
+
+/* --------------------------------------rating--------------------------------------------------------- */
+.rating {
+    /* display: inline-block; */
+    margin-top: -15px;
+    position: relative;
+    font-size: 1.5em;
+    color: #eb9800;
+}
+
+.rating-border {
+    width: 140px;
+    content: '☆ ☆ ☆ ☆ ☆';
+    position: relative;
+    font-size: 1.5em;
+    color: #eb9800;
+}
+
+.rating-border::before {
+    content: '☆ ☆ ☆ ☆ ☆';
+    color: #ffa806;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    white-space: nowrap;
+    transition: width 0.2s;
+}
+
+.rating::before {
+    content: '★ ★ ★ ★ ★';
+    color: #ffa806;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.2s;
+}
+
+.rating[data-rating="1"]::before {
+    width: 20px;
+}
+
+.rating[data-rating="2"]::before {
+    width: 50px;
+}
+
+.rating[data-rating="3"]::before {
+    width: 80px;
+}
+
+.rating[data-rating="4"]::before {
+    width: 105px;
+}
+
+.rating[data-rating="5"]::before {
+    width: 140px;
+}
+
+
+
+.product-tab h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 40px 0 10px 40px;
+    color: #677070;
+    border-bottom: 3px solid #9f9f9f;
+    font-size: 25px;
+    padding-bottom: 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.product-descript p {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+    border: solid 1px #dddddd;
+}
+
+
+.product-descript input {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+    border: solid 1px #dddddd;
+}
+
+.rate-product {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+}
+
+.product-descript .review-content {
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+
+
+
+.pagination-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.pagination-1 a,
+.home span {
+    font-size: 14.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    /* display: block; */
+    margin: 0 5px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #2e6b47;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-1 .navi-button {
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 11px;
+}
+
+.pagination-1 a:hover {
+    background-color: #3f4d42;
+    color: white;
+}
+
+.pagination-1 span {
+    background-color: #494f4c;
+    color: white;
+    border: 1px solid #181918;
+
+}
+
+#none {
+    background-color: #ffffff;
+    display: block;
+    margin: 0 5px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #2e6b47;
+    border: 0px solid #ddd;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.col-md-3,
+.col-sm-4,
+.col-6 {
+    overflow: hidden;
+}
+
+/* -----------------------------------product mangage------------------------------------------------------ */
+
+
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.action-buttons {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-wrapper:hover .action-buttons {
+    display: block;
+}
+
+.btn-update,
+.btn-delete {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-update:hover {
+    background-color: #5cb85c;
+}
+
+.btn-delete:hover {
+    background-color: #d9534f;
+}
+
+
+
+.sticky-button {
+    /* position: -webkit-sticky; */
+    position: sticky;
+    bottom: 20px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    border-radius: 50%;
+    background-color: #49694b;
+    color: #f0efef;
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    line-height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    text-decoration: none;
+}
+
+.sticky-button abbr {
+    text-decoration: none;
+}
+
+.home {
+    position: relative;
+}
+
+.sticky-button:hover {
+    background-color: #7b807b;
+}
+
+
+/*-----------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .heading {
+        display: block;
+    }
+
+    #col1,
+    #col2,
+    #col3 {
+        width: 100%;
+    }
+
+    #col2 img {
+        width: 30%;
+    }
+
+    .header-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .login input[type="text"],
+    .login input[type="password"] {
+        margin-top: 10px;
+        width: 40%;
+        min-width: 200px;
+        flex: 1;
+        /* Cho phép input chiếm toàn bộ không gian còn lại */
+        padding: 10px;
+        /* Thêm khoảng cách bên trong input */
+        border: 1.5px solid #49694B;
+        /* Đặt border 2px màu đen */
+        border-radius: 0;
+        /* Loại bỏ bo góc */
+        box-sizing: border-box;
+        /* Bao gồm cả border và padding trong chiều rộng */
+    }
+
+    .register input[type="text"],
+    .register input[type="password"] {
+        margin-top: 10px;
+        width: 60%;
+        min-width: 200px;
+        flex: 1;
+        /* Cho phép input chiếm toàn bộ không gian còn lại */
+        padding: 10px;
+        /* Thêm khoảng cách bên trong input */
+        border: 1.5px solid #49694B;
+        /* Đặt border 2px màu đen */
+        border-radius: 0;
+        /* Loại bỏ bo góc */
+        box-sizing: border-box;
+        /* Bao gồm cả border và padding trong chiều rộng */
+    }
+
+    #ft p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+
+
+    #cart-btn {
+        margin: 40px 0 40px 0;
+        height: 50px;
+        width: 100%;
+        border-radius: 3px;
+        background-color: #49694B;
+        border: 1px;
+        color: #F3F3F3;
+        font-weight: 600;
+    }
+
+    /* -----------------------cart------------------ */
+    /* #col2, #col3, #head2, #head3{
+        display: none;
+    }
+
+    .cart-tbody div:{
+        display: block;
+        width: 100%;
+    } */
+
+}

@@ -1,0 +1,96 @@
+.main-content h5{
+    font-size: 1.2rem !important;
+    color: #5EAE53 !important;
+}
+
+a {
+    text-decoration: none;
+    color: #464545;
+}
+
+.cpl-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 15px 5px 15px;
+    background-color: #87ae82;
+    color: #fff;
+    border: 2px solid #5eae53;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cancel-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 15px 5px 15px;
+    background-color: #cbabab;
+    color: #fff;
+    border: 2px solid #b6a4a1;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.status-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 15px 5px 15px;
+    background-color: #5eae53;
+    color: #fff;
+    border: 2px solid #5eae53;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px; /* Sidebar width */
+  position: fixed;
+  background-color: #5EAE53; /* green color */
+  padding-top: 120px;
+  left: 0;
+}
+
+.sidebar .nav-link {
+  color: white;
+  font-size: 18px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 25px 0 0 25px;
+  transition: 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #66bb6a; /* lighter green */
+}
+
+.sidebar .nav-link.active {
+  background-color: white;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 250px; 
+    padding: 120px 20px 20px;
+  overflow: hidden;
+}
+
+#header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}

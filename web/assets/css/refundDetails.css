@@ -1,0 +1,147 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 20, 2024, 12:08:20 AM
+    Author     : phuct
+*/
+.refund-container {
+    background-color: #ffffff; /* Màu nền trắng */
+    border: 2px solid #5eae53; /* Đường viền màu xanh lá #5eae53 */
+    border-radius: 8px;
+    width: 50%; /* Kích thước khung nhỏ hơn, chiếm 60% màn hình */
+    margin: 20px auto; /* Căn giữa container */
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+}
+
+.refund-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.refund-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.refund-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+}
+
+.refund-item strong {
+    font-weight: 600;
+}
+
+.refund-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.refund-actions button {
+    min-width: 150px;
+}
+
+.button-group button {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+h4.text-primary {
+    color: #ff6b6b !important;
+    font-weight: 700;
+}
+.refund-img{
+    max-width: 50%;
+}
+
+/* Modal Background */
+.modal-content {
+    background-color: white;
+    border: 2px solid #5eae53;
+    border-radius: 8px;
+}
+
+/* Modal Header */
+.modal-header {
+    background-color: #5eae53;
+    color: white;
+    border-bottom: 1px solid #5eae53;
+}
+
+/* Close Button Style */
+.modal-header .btn-close {
+    background-color: white;
+    color: #5eae53;
+    border: 1px solid #5eae53;
+    border-radius: 50%;
+}
+
+.modal-header .btn-close:hover {
+    background-color: #5eae53;
+    color: white;
+    border-color: white;
+}
+
+/* Form Group Styles */
+.modal-body .form-group label {
+    color: #5eae53;
+    font-weight: bold;
+}
+
+.modal-body .form-control {
+    border: 1px solid #5eae53;
+    border-radius: 5px;
+}
+
+/* Input Field Focus State */
+.modal-body .form-control:focus {
+    border-color: #5eae53;
+    box-shadow: 0 0 5px #5eae53;
+}
+
+/* Submit Button */
+.modal-body .btn-primary {
+    background-color: #5eae53;
+    border-color: #5eae53;
+    color: white;
+    border-radius: 5px;
+}
+
+.modal-body .btn-primary:hover {
+    background-color: white;
+    color: #5eae53;
+    border-color: #5eae53;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+    margin-top: 12%;
+}
+
+.modal-body .btn-primary {
+    background-color: #5eae53;
+    border-color: #5eae53;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.refund-container {
+    background-color: #5eae5324;
+    border: 2px solid #5eae53;
+    border-radius: 33px;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+}
