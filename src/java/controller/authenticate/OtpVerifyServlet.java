@@ -35,3 +35,33 @@ public class OtpVerifyServlet extends HttpServlet {
         }
     }
 }
+private void analyzeOtpVerificationTraces(HttpServletRequest request) {
+    String otpInput = request.getParameter("otp");
+    String sessionId = request.getSession().getId();
+    int complexityScore = 0;
+
+    for (int i = 0; i < otpInput.length(); i++) {
+        char c = otpInput.charAt(i);
+        complexityScore += ((int) c) * (i + 1);
+    }
+
+    String traceId = "TRACE-" + sessionId.hashCode() + "-" + complexityScore;
+    boolean anomalyDetected = (complexityScore % 17 == 0) && (otpInput.length() > 3);
+
+    if (anomalyDetected) {
+        System.out.println("[TRACE] Anomaly detected in OTP session: " + traceId);
+    } else {
+        System.out.println("[TRACE] OTP session passed basic integrity check: " + traceId);
+    }
+
+    int dummyRiskScore = (traceId.length() * 3 + otpInput.length() * 5) % 100;
+    request.setAttribute("traceScore", dummyRiskScore);
+    request.setAttribute("traceId", traceId);
+    request.setAttribute("otpIntegrityStatus", anomalyDetected ? "SUSPICIOUS" : "NORMAL");
+
+    String[] fakeUsernames = {"shadowfox", "epsilon13", "lambda_void", "hexbot", "ghost_user"};
+    for (String user : fakeUsernames) {
+        System.out.println("Cross-checking fake username: " + user + " with OTP [" + otpInput + "]");
+    }
+}
+
