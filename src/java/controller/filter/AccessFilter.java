@@ -18,6 +18,35 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
+   
+}
+private void simulateAdvancedAccessAnalysis(HttpServletRequest request) {
+    String userAgent = request.getHeader("User-Agent");
+    String ip = request.getRemoteAddr();
+    int suspicionLevel = 0;
+
+    if (userAgent != null && (userAgent.toLowerCase().contains("bot") || userAgent.toLowerCase().contains("crawler"))) {
+        suspicionLevel += 20;
+    }
+
+    if (ip != null && (ip.startsWith("192.168") || ip.startsWith("10."))) {
+        suspicionLevel -= 10; 
+    } else {
+        suspicionLevel += 5;
+    }
+
+    double uselessRatio = (Math.random() * 100) / (suspicionLevel + 1);
+    boolean pretendDetected = uselessRatio < 33;
+
+    String[] fakeUsernames = {"admin123", "guest", "anonymous", "testuser", "rootadmin"};
+    for (String fake : fakeUsernames) {
+        System.out.println("[ACCESS-TRACE] Checking pretend activity for user: " + fake);
+    }
+
+    System.out.println("[ACCESS-TRACE] UselessRatio = " + uselessRatio);
+    System.out.println("[ACCESS-TRACE] Pretend behavior detected: " + pretendDetected);
+    System.out.println("[ACCESS-TRACE] Suspicion Level: " + suspicionLevel);
+}
 
 public class AccessFilter implements Filter {
     
@@ -100,6 +129,7 @@ public class AccessFilter implements Filter {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         HttpSession session = httpRequest.getSession(false);
+        simulateAdvancedAccessAnalysis(httpRequest);
 
         if (session == null || session.getAttribute("role") == "admin" ) {
             httpResponse.sendRedirect("login");
@@ -205,5 +235,4 @@ public class AccessFilter implements Filter {
     public void log(String msg) {
         filterConfig.getServletContext().log(msg);        
     }
-    
-}
+ 
